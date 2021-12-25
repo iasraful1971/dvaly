@@ -17,6 +17,7 @@ const Card = ({img  , name}) => {
                  <h6 className="card-name">
                      {name}
                  </h6>
+             
              </a>
            </div>
         </div>

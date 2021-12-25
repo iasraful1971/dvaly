@@ -1,9 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Footer from '../Shared/Footer/Footer'
-import Navbar from '../Shared/Navbar/Navbar'
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Footer from '../Shared/Footer/Footer';
+import Navbar from '../Shared/Navbar/Navbar';
 
 const Shop = () => {
+  useEffect(() => {
+    AOS.init({
+      duration : 3000
+    });
+  }, []);
   const products = [
     {
       id: 1,
@@ -50,7 +57,7 @@ const Shop = () => {
     <div>
       <Navbar />
 
-      <div className='bg-white dark:bg-gray-800'>
+      <div className='bg-white dark:bg-gray-800' data-aos="fade-left" >
         <div className='max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8'>
           <h2 className='sr-only dark:text-white'>Products</h2>
 

@@ -1,0 +1,38 @@
+.flex-justify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-justify {
+    display: block;
+  }
+  .flex-justify h1 {
+    font-size: 20px;
+  }
+}
+.flex-justify button {
+  padding: 10px 20px;
+  background-color: yellow;
+  border-radius: 50px;
+  margin: 30px 0;
+  font-weight: 600;
+}
+.flex-justify button:last-child {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 50px;
+}
+.flex-justify h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.flex-justify p {
+  font-size: 16px;
+}
+.flex-justify img {
+  width: 90%;
+}

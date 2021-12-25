@@ -72,7 +72,7 @@ function Footer() {
               Dvaly
             </Link>
           </div>
-          <small className='website-rights'>copyright © 2020</small>
+          <small className='website-rights'>copyright ©  Asraful. 2021</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'

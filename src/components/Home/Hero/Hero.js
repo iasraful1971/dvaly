@@ -1,12 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
   return (
     <header class='bg-white dark:bg-gray-800'>
       <div class='container px-6 py-16 mx-auto'>
         <div class='items-center lg:flex'>
-          <div class='w-full lg:w-1/2'>
+          <div class='w-full lg:w-1/2' data-aos='fade-up'>
             <div class='lg:max-w-lg'>
               <h1 class='text-2xl font-semibold text-gray-800 uppercase dark:text-white lg:text-3xl'>
                 Best Place To Choose Your Products
@@ -24,7 +31,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div class='flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2'>
+          <div class='flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2' data-aos='fade-down'>
             <img
               class='w-full h-full lg:max-w-2xl'
               src='https://merakiui.com/_nuxt/img/Catalogue-pana.32658f1.svg'
